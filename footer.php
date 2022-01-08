@@ -1,4 +1,8 @@
 <?php
 /*
-* This template is used display single posts
+* This template is used display footer
 */
+?>
+</body>
+<?php wp_footer() ?>
+</html>
