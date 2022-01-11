@@ -2,6 +2,7 @@
 /*
 * This is function file
 */
+add_theme_support('custom-logo');
 function vs_theme_scripts(){
 	wp_enqueue_style('',get_stylesheet_uri());
 	wp_enqueue_style('bootstrap-css',get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css');

@@ -14,6 +14,11 @@ Tags: RKY Theme,vidsik,vs theme
     height: 150px;
     background: #f0f0f0;
 }
+.site-branding{
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
 /******************
 01: Main Menu
 ******************/

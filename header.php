@@ -17,7 +17,9 @@
 <body>
 	<div class="site-main container">
 		<header class="site-header">
-			<div class="site-branding"></div>
+			<div class="site-branding">
+				<?php the_custom_logo() ?>
+			</div>
 		</header>
 		<nav class="site-navigation">
 		</nav>
