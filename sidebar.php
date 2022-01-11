@@ -2,8 +2,11 @@
 /*
 * This template is used display sidebar
 */
-get_header(); // this function for include header file
 ?>
+<div class="main-sidebar-inner">
+	<?php dynamic_sidebar('main-sidebar'); ?>
+</div>
+
 
 
 
