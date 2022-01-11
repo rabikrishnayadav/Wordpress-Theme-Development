@@ -92,9 +92,22 @@ Tags: RKY Theme,vidsik,vs theme
 .page-numbers.current{
     background: #fff;
 }
+.post-content{
+    margin-top: 10px;
+}
+.post-image, .post-title, .post-meta-row, .post-content{
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+}
+.post-image{
+    text-align: center;
+}
+
 /******************
 01: Sidebar & Widgets
 ******************/
+
 .home-sidebar{
     background: #ddd;
     min-height: 400px;
