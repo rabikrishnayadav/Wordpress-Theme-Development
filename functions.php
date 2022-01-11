@@ -17,6 +17,17 @@ function vs_theme_setup(){
 		'primary' =>__('Primary Menu', 'RKY Theme'),
 		'secondary' =>__('Secondary Menu', 'RKY Theme')
 	) );
+
+	$args = array(
+		'default-image' => get_template_directory_uri().'assets/images/banner.jpg',
+		'default-text-color' => '000',
+		'width'			=> 1920,
+		'height'		=> 400,
+		'flex-width'	=> true,
+		'flex-height'	=> true,
+	);
+	add_theme_support('custom-header',$args);
+
 };
 
 add_action('after_setup_theme','vs_theme_setup');

@@ -5,6 +5,9 @@
 get_header(); // this function for include header file
 ?>
 <div class="home-main container">
+	<div class="custom-header">
+		<img src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width) ?>" height="<?php echo absint(get_custom_header()->height) ?>" class="img-fluid">
+	</div>
 	<div class="row mr-0 ml-0">
 		<div class="home-posts col-8">
 			<?php if (have_posts() ) : ?>
