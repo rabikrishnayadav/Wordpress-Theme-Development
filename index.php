@@ -30,8 +30,11 @@ get_header(); // this function for include header file
 			</article>
 			<?php endwhile; ?>
 			<?php endif; ?>
+			<div class="pagination row ml-0 mr-0">
+				<?php echo paginate_links() ?>
+			</div>
 		</div>
-		<div class="home-sidebar col-4">
+		<div class="home-sidebar col-lg-4 col-xs-12 pl-0 pr-0">
 			<?php get_sidebar(); ?>
 		</div>
 	</div>

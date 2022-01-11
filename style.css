@@ -73,6 +73,22 @@ Tags: RKY Theme,vidsik,vs theme
     float: left;
     padding: 10px;
 }
+.pagination{
+    padding: 10px;
+    text-align: center;
+}
+.pagination a, .page-numbers.current{
+    display: inline-block;
+    padding: 10px 15px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #333333;
+    margin: 0 2px;
+}
+.page-numbers.current{
+    background: #fff;
+}
 /******************
 01: Sidebar & Widgets
 ******************/
