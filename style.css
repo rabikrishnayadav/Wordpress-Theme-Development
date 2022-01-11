@@ -54,8 +54,24 @@ Tags: RKY Theme,vidsik,vs theme
     margin-top: 30px;
 }
 .home-posts{
+    padding: 0px 10px !important;
+    margin-bottom: 15px;
+}
+.post-header h1{
+    margin-top: 15px;
     background: #f0f0f0;
-    padding: 30px 30px !important;
+    margin-right: 10px;
+}
+.posts-header .post-thumbnail img{
+    max-width: 100%;
+}
+.posts-header .post-thumbnail a{
+    display: inline-block;
+    max-width: 100%;
+}
+.post-meta{
+    float: left;
+    padding: 10px;
 }
 /******************
 01: Sidebar & Widgets
@@ -71,4 +87,13 @@ Tags: RKY Theme,vidsik,vs theme
     margin-top: 25px;
     background: #333333;
     height: 200px;
+    color: #fff;
+}
+.site-footer ul a{
+    color: #fff;
+    list-style: none;
+}
+.site-footer ul a:hover{
+    color: blue;
+    text-decoration: none;
 }
