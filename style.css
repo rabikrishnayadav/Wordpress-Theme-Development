@@ -27,7 +27,25 @@ Tags: RKY Theme,vidsik,vs theme
     display: block;
     clear: both;
     background: #2ca358;
-    height: 60px;
+    height: 50px;
+    overflow: hidden;
+}
+.site-navigation ul{
+    margin: auto;
+    list-style: none;
+}
+.site-navigation a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.site-navigation a:hover{
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
 }
 /******************
 01: Home Content
