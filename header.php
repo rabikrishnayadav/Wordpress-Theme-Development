@@ -15,3 +15,10 @@
 	<?php wp_head() ?>
 </head>
 <body>
+	<div class="site-main container">
+		<header class="site-header">
+			<div class="site-branding"></div>
+		</header>
+		<nav class="site-navigation">
+		</nav>
+	</div>

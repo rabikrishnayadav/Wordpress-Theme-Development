@@ -7,6 +7,45 @@ Version: 1.0.0
 License: GPL V2
 Tags: RKY Theme,vidsik,vs theme
  */
-body{
-    background: -webkit-linear-gradient(left, gold, green);
+/******************
+01: header
+******************/
+.site-header{
+    height: 150px;
+    background: #f0f0f0;
+}
+/******************
+01: Main Menu
+******************/
+.site-navigation{
+    width: 100%;
+    display: block;
+    clear: both;
+    background: #2ca358;
+    height: 60px;
+}
+/******************
+01: Home Content
+******************/
+.home-main{
+    margin-top: 30px;
+}
+.home-posts{
+    background: #f0f0f0;
+    padding: 30px 30px !important;
+}
+/******************
+01: Sidebar & Widgets
+******************/
+.home-sidebar{
+    background: #ddd;
+    min-height: 400px;
+}
+/******************
+01: Footer
+******************/
+.site-footer{
+    margin-top: 25px;
+    background: #333333;
+    height: 200px;
 }
