@@ -60,6 +60,17 @@ Tags: RKY Theme,vidsik,vs theme
     padding: 0px 10px !important;
     margin-bottom: 15px;
 }
+.home-posts .section-head{
+    padding: 10px;
+    background: #2ca358;
+    color: #fff;
+}
+.home-posts .section-head h3{
+    margin: 0;
+}
+.home-posts .selection-content{
+    padding: 10px;
+}
 .post-header h1{
     margin-top: 15px;
     background: #f0f0f0;
@@ -103,7 +114,12 @@ Tags: RKY Theme,vidsik,vs theme
 .post-image{
     text-align: center;
 }
-
+.home-posts .post-thumb, .home-posts .post-title{
+    float: left;
+}
+.home-posts .post-thumb{
+    margin-right: 10px;
+}
 /******************
 01: Sidebar & Widgets
 ******************/

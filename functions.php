@@ -84,3 +84,14 @@ function vs_widgets_init(){
 	) );
 }
 add_action('widgets_init','vs_widgets_init');
+
+/**
+* Filter the except length to 20 words.
+*@param int $length Excerpt length.
+*@return int (Maybe) modified excerpt length.
+*/
+
+function vs_custom_excerpt_length($length){
+	return 10;
+}
+add_filter('excerpt_length', 'vs_custom_excerpt_length',999);
