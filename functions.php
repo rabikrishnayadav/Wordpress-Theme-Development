@@ -14,8 +14,8 @@ function vs_theme_setup(){
 	add_theme_support('automatic-feed-links');
 
 	register_nav_menus( array(
-		'primary' =>__('Primary Menu', 'RKY Theme'),
-		'secondary' =>__('Secondary Menu', 'RKY Theme')
+		'primary' =>__('Primary Menu', 'VSTheme'),
+		'secondary' =>__('Secondary Menu', 'VSTheme')
 	) );
 
 	$args = array(
@@ -44,7 +44,7 @@ add_action('wp_enqueue_scripts','vs_theme_scripts');
 
 function vs_widgets_init(){
 	register_sidebar( array(
-		'name'			=> __('Primary Sidebar', 'RKY Theme'),
+		'name'			=> __('Primary Sidebar', 'VSTheme'),
 		'id'			=>'main-sidebar',
 		'description'	=>'Main Sidebar on Right Side',
 		'before_widget' =>'<aside id="%1$s" class="widget %2$s">',
@@ -54,7 +54,7 @@ function vs_widgets_init(){
 	) );
 
 	register_sidebar( array(
-		'name'			=> __('Footer Widget 1', 'RKY Theme'),
+		'name'			=> __('Footer Widget 1', 'VSTheme'),
 		'id'			=>'footer-1',
 		'description'	=>'Main Sidebar on Right Side',
 		'before_widget' =>'<aside id="%1$s" class="widget %2$s">',
@@ -64,7 +64,7 @@ function vs_widgets_init(){
 	) );
 
 	register_sidebar( array(
-		'name'			=> __('Footer Widget 2', 'RKY Theme'),
+		'name'			=> __('Footer Widget 2', 'VSTheme'),
 		'id'			=>'footer-2',
 		'description'	=>'Main Sidebar on Right Side',
 		'before_widget' =>'<aside id="%1$s" class="widget %2$s">',
@@ -74,7 +74,7 @@ function vs_widgets_init(){
 	) );
 
 	register_sidebar( array(
-		'name'			=> __('Footer Widget 3', 'RKY Theme'),
+		'name'			=> __('Footer Widget 3', 'VSTheme'),
 		'id'			=>'footer-3',
 		'description'	=>'Main Sidebar on Right Side',
 		'before_widget' =>'<aside id="%1$s" class="widget %2$s">',
@@ -95,3 +95,6 @@ function vs_custom_excerpt_length($length){
 	return 10;
 }
 add_filter('excerpt_length', 'vs_custom_excerpt_length',999);
+
+// include Customizer
+require get_template_directory(). '/inc/customizer.php';

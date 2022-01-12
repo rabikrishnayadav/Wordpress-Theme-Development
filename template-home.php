@@ -7,8 +7,13 @@ get_header();
 ?>
 <div class="container">
 	<div class="page-custom-header">
+		<?php
+		$banner_status = get_theme_mod('vstheme_home_banner','yes');
+		?>
+		<?php  if($banner_status == 'yes'): ?>
 		<?php $img_url = get_the_post_thumbnail_url(get_the_ID(), 'full') ?>
 		<img src="<?php echo $img_url ?>" alt="<?php echo get_the_title() ?>" class="img-fluid">
+		<?php endif; ?>
 	</div>
 	<div class="flex-row ml-0 mr-0 mt-3 text-center">
 		<?php if (have_posts() ) : ?>
@@ -20,14 +25,16 @@ get_header();
 	<div class="home-posts row ml-0 mr-0 mt-5">
 		<div class="col">
 			<div class="section-head">
-				<h3>Latest From Technology</h3>
+				<h3><?php echo get_theme_mod('vstheme_featured_block_1','Latest From Technology') ?></h3>
 			</div>
 			<div class="section-content pt-4">
 				<?php 
 
 				$args = array (
 
-					'cat' => 3
+					'cat' => 3,
+					'post_per_page' => 3
+
 				);
 				$tech_posts = new WP_Query($args);
 				if ($tech_posts->have_posts() ) : ?>
@@ -52,14 +59,15 @@ get_header();
 		</div>
 		<div class="col">
 			<div class="section-head">
-				<h3>Latest From Technology</h3>
+				<h3><?php echo get_theme_mod('vstheme_featured_block_2','Latest From Social Media') ?></h3>
 			</div>
 			<div class="section-content pt-4">
 				<?php 
 
 				$args = array (
 
-					'cat' => 4
+					'cat' => 4,
+					'post_per_page' => 3
 				);
 				$tech_posts = new WP_Query($args);
 				if ($tech_posts->have_posts() ) : ?>

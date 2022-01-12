@@ -9,6 +9,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head() ?>
+	<style type="text/css">
+		body{
+			background: <?php echo get_theme_mod('vstheme_body_bg_color','#fff') ?>;
+		}
+		.site-navigation{
+			background: <?php echo get_theme_mod('vstheme_nav_bg_color','#2ca358') ?>;
+		}
+		.site-navigation a:hover{
+			background: <?php echo get_theme_mod('vstheme_nav_li_color','#000') ?>;
+		}
+	</style>
 </head>
 <body>
 	<div class="site-main container">
