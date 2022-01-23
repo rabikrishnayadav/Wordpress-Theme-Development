@@ -92,9 +92,17 @@ add_action('widgets_init','vs_widgets_init');
 */
 
 function vs_custom_excerpt_length($length){
-	return 10;
+	return 20;
 }
 add_filter('excerpt_length', 'vs_custom_excerpt_length',999);
 
 // include Customizer
 require get_template_directory(). '/inc/customizer.php';
+
+
+// learn more button in excerpt add
+function vs_excerpt_loadmore($more){
+	$more = '<a href="'.get_the_permalink().'">Read More</a>';
+	return $more;
+}
+add_filter('excerpt_more','vs_excerpt_loadmore');
